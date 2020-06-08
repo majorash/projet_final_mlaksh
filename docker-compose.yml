@@ -1,0 +1,64 @@
+version: "3.3"
+services:
+  app_front:
+    build: ./app_frontend_caller
+    depends_on:
+      - db
+      - app_back
+    ports:
+      - "5000:5000"
+    networks:
+      - default
+    volumes:
+      - ./uploads:/var/uploads
+
+
+  app_back:
+    build: ./app_tf_server
+    depends_on:
+      - db
+      - tf_server
+    ports:
+      - "5001:5001"
+    networks:
+      - default
+    volumes:
+      - ./uploads:/var/uploads
+
+  db:
+    image: mysql:8
+    ports:
+      - "32000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./mysql:/docker-entrypoint-initdb.d/:ro
+      - ./uploads:/var/uploads
+      - ./db_dumps:/var/dumps
+    networks:
+      - default
+  
+  tf_server:
+    image: tensorflow/serving
+    ports:
+      - '8501:8501'
+    volumes:
+      - './models:/models'
+    command:
+      - '--model_config_file=/models/models.config'
+    networks:
+      - default
+
+volumes:
+  uploads:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./uploads
+  db_dumps:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./db_dumps

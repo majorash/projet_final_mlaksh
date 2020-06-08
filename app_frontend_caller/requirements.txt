@@ -1,0 +1,8 @@
+flask
+numpy
+opencv-python
+Pillow
+# tensorflow
+werkzeug
+flask-mysql
+requests

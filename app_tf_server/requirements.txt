@@ -1,0 +1,8 @@
+flask
+numpy
+Pillow
+werkzeug
+flask-mysql
+requests
+scipy
+pandas
