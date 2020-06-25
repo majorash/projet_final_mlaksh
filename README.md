@@ -1,4 +1,4 @@
-# 
+# Radiology Diagnostic assistance app
 
 
 ## Build & Run
@@ -27,4 +27,4 @@ Then go to https://0.0.0.0:5000
 ## [Link to project report (in french)](https://drive.google.com/file/d/1MtActJZmqjWq1TYMTY4qeKqrS615Ts2a/view?usp=sharing)
 
 
-!(https://github.com/majorash/projet_final_mlaksh/tree/master/images/app_architecture "Application architecture")
+!(https://github.com/majorash/projet_final_mlaksh/blob/master/images/app_architecture.png "Application architecture")
