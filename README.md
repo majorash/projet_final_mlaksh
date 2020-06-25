@@ -22,9 +22,10 @@ Then go to https://0.0.0.0:5000
 * Add a CI/CD docker module for continuous learning
 
 
-## [Link to Gslides presentation (in french)](https://docs.google.com/presentation/d/188rLTshMIaedkdHaCfejhFNzJ4eDHxPF1KBv8ucjh1U/edit?usp=sharing)
+[Link to Gslides presentation (in french)](https://docs.google.com/presentation/d/188rLTshMIaedkdHaCfejhFNzJ4eDHxPF1KBv8ucjh1U/edit?usp=sharing)
 
-## [Link to project report (in french)](https://drive.google.com/file/d/1MtActJZmqjWq1TYMTY4qeKqrS615Ts2a/view?usp=sharing)
+[Link to project report (in french)](https://drive.google.com/file/d/1MtActJZmqjWq1TYMTY4qeKqrS615Ts2a/view?usp=sharing)
 
+### Application architecture
 
-!(https://github.com/majorash/projet_final_mlaksh/blob/master/images/app_architecture.png "Application architecture")
+![Application architecture](https://github.com/majorash/projet_final_mlaksh/blob/master/images/app_architecture.png)
